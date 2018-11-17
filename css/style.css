@@ -1,0 +1,578 @@
+
+/* Universal */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    color: #024b69ad;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+/* Layout */
+
+
+.jumbotron p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.jumbotron h1 {
+    color: #09b2d8c9;
+    font-size: 50px;
+}
+
+.title-image {
+    position: relative;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin: 10% auto;
+}
+
+@media only screen and (max-width:425px) { 
+    .title-image {
+        margin: 22% auto;
+    }
+}
+
+@media only screen and (min-width:1440px) { 
+	.title-image {
+        margin: 3% auto;
+    }
+
+    .header h1 {
+        margin: -2% auto !important;
+    }
+
+    .header h4 {
+        margin: 3% auto !important;
+    }
+
+    .cv {
+        margin: -3% auto !important;
+    }
+}
+
+.title-image img {
+    max-width: -webkit-fill-available;
+}
+
+.title-image h4 {
+    position: absolute;
+    top: 50%;
+    right:50%;
+    margin-left: 50%;
+}
+
+.container {
+    margin: auto 0;
+    width: 80%;
+}
+
+.container-fluid {
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+
+.navbar-default {
+    background-color: #00000000;
+    border: none;
+    padding: 0 1em;
+    position: absolute;
+}
+
+.navbar-header {
+    margin-left: 5%;
+}
+
+.navbar-default .navbar-nav>.active> a, 
+.navbar-default .navbar-nav>.active> a:focus, 
+.navbar-default .navbar-nav>.active> a:hover {
+  background: none; 
+}
+
+#home {
+    background-image: url("../img/autumn.JPG");
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    width: 100%;
+    margin: 0% auto;
+}
+
+.header {
+    display: block;
+}
+
+.header h1 {
+    margin: auto auto;
+    max-width: 180px;
+    margin: -9% auto;
+    color: black;
+}
+
+.header h4 {
+    max-width: 215px;
+    margin: 10% auto;
+}
+
+.intro {
+    border-radius: 10px;
+    float: right;
+    padding: 0 20px;
+    position: relative; 
+    top: 145px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1em;
+}
+
+#skill-list {
+    margin-left: 50px;
+}
+
+#accordion {
+    padding: 0 1rem;
+}
+
+.cv {
+    max-width: 142px;
+    margin: -10% auto;
+    padding-bottom: 5em;
+}
+
+#projwork, #calc {
+    background-color: #ffffff;
+    display: grid;
+    padding: 1em;
+}
+
+#work img {
+    display: table-cell;
+    margin: 1em;
+    padding-bottom: 5em;
+    vertical-align: middle;
+    width: auto;
+}
+
+#worktitle {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+#work1 {
+    padding: 2rem 0;
+}
+
+#vid-title {
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+#vid-container {
+    max-width: 33%;
+    min-width: 360px;
+    padding: 3rem 0 3rem 1.5rem;
+}
+
+.footer-media {
+    padding-left: 1rem;
+}
+
+.footer-copyright {
+    padding: 1rem;
+}
+
+/* Color */
+
+body {
+    background-color: #F5F5F5;
+    color: #34495e;
+    position: relative;
+}
+
+.skills {
+    background-color: #719ebd2b;
+    color: #000000ad;
+    padding-bottom: 1.2em;
+}
+
+.intro {
+    background-color: #719fbdbd;
+    color: #000000ad;
+}
+
+@media (max-width: 425px) {
+    .intro {
+     background-color: #719fbdbd;
+     width: 95%;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #060606c2;
+    }
+}
+
+.main-text {
+    background-color: #c1aeae2b;
+    color: #000000ad;
+}
+
+.contact {
+    background-image: url("../img/IMG_1600-min.JPG");
+    background-size: cover;
+    background-position: inherit;
+    height: 75%;
+}
+
+.contact-content {
+    height: 100%;
+    text-align: center;
+}
+
+.form {
+    margin: 4rem 0 4rem 0;
+}
+
+.info {
+    align-content: center;
+    color: #ebf0f5;
+    display: grid;
+    height: auto;
+    padding-top: 10%;
+}
+
+.info ul {
+    display: inline-grid;
+}
+
+.contact-footer {
+    height: 10%;
+}
+
+.map-container {
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    height: 25%;
+    justify-content: center;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.address {
+    background-color: #314059c2;
+    border-radius: 15%;
+    display: inline-grid;
+    height: 36%;
+    justify-content: center;
+    padding: 1em;
+    width: auto;
+}
+
+.address span {
+    color: whitesmoke;
+}
+
+.info span {
+    color: #ceda7ccf;
+    font-size: 1em;
+    padding: 1em;
+    text-transform: uppercase; 
+}
+
+.contact-footer {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.page-links {
+    font-size: 1.4em;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    padding: 3em;
+    text-align: center;
+}
+
+.page-links a {
+    font-family: 'Comfortaa', cursive;
+    padding-right: 0.75rem;
+    text-decoration: none;
+}
+
+.page-links a:hover {
+    color: #027eafad;
+    text-decoration: underline;
+    -webkit-transition: color 600ms;
+}
+
+#homelinks {
+    display: grid;
+    font-size: 1.4em;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+    padding: 3em;
+}
+
+#homelinks a {
+    color: #09b2d8c9;
+}
+
+.glyphicon-user:hover {
+    color: #027eafad;
+    -webkit-transition: color 700ms;
+}
+
+.glyphicon-earphone:hover {
+    color: #027eafad;
+    -webkit-transition: color 700ms;
+}
+
+.glyphicon-envelope:hover {
+    color: #027eafad;
+    -webkit-transition: color 700ms;
+}
+
+.panel-body {
+    background-color: #d3d9e2d9;
+}
+
+.panel-default .panel-heading {
+    background-color: #9da5afa8;
+}
+
+#contact-name {
+    color: #0f3052fa;
+    font-size: 2rem;
+}
+
+.navbar-default .navbar-brand {
+    color: #060606c2;
+}
+
+.navbar-default .nav li a { 
+    color: #060606c2;    
+}
+
+.footer-copyright {
+    float: right;
+}
+
+.footer-media {
+    display: inline;
+}
+
+.form-control {
+    background-color: none;
+    border: none;
+    width: 100%;
+}
+
+#message-box {
+    width: 100%;
+}
+
+.btn-default {
+    font-family: 'Comfortaa', cursive;
+}
+
+.learn-more {
+    color: #ffffff;
+    float: left;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.modal-button {
+    padding: 2rem;
+}
+
+#modalembed {
+    height: 60rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.tooltip-inner {
+    color: #fff !important;
+    background: #c23d39 !important;
+  }
+
+.work-img {
+    display: block; /* needed to center the element with margin */
+    margin: auto; /* center the image inside the column if it's smaller */
+    max-width: 200px; /* needs to be set to the width of your image files if they are relatively small */
+    position: relative; /* is needed for .info position: absolute to work */
+}
+
+.work-info {
+    position: absolute; /* let's us move the text around and not worry about the image */
+    top: 15%; /* position the text 15% away from the top */
+    left: 22%;
+    color:#3d94a5;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family:Futura;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:0.5em;
+    line-height:1.6;
+    display: none;
+}
+
+.proj-title {
+    font-weight: 100;
+}
+
+#visible-comment {
+    background-color: #ceda7ccf;
+    width: fit-content;
+    margin: auto;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+#char-Count {
+    background-color: #ceda7ccf;
+    width: 15%;
+    margin: auto;
+    border-radius: 0.5em;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    color: #024b69ad;
+    font-family: 'Comfortaa', cursive;
+}
+
+p, li, span {
+    font-family: 'Mina', sans-serif;
+    font-weight: 100;
+}
+
+h2, h3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#work h2 {
+    padding-left: 1em;
+}
+
+.intro p {
+    font-family: 'Mina', sans-serif;
+    font-weight: 100;
+}
+
+.skills h3 {
+    text-align: center;
+}
+
+.panel-heading {
+    text-transform: uppercase;
+}
+
+/* Photos */
+
+.about {
+    background-image: url("../img/IMG_1539-min.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: -webkit-fill-available;
+    overflow: auto;
+}
+
+.jumbotron {
+    background-image: url("../img/IMG_1642-min.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+#faq {
+    background-image: url("../img/IMG_1553-min.JPG");
+    background-size: cover;
+    background-position: center;
+    height: -webkit-fill-available;
+    width: 100%;
+}
+
+.background {
+    height: 924px;
+} 
+
+.navbar-brand {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Calculator css */
+
+.calculator {
+    background-color: #A4DAD7;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    display: block;
+    margin: 3rem 0rem 3rem 1.5rem;
+    padding: 1%;
+    width: 320px;
+}
+
+#display {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 12px #1f1e1e66;
+    height: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: right;
+    padding-right: 0.5em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.button {
+    background-color: #ff92ab;
+    border: 1px solid #969595;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 0 #dcd8d9c7, 0 2px 9px #29161666, inset 0 1px 0 #ffffff4d, inset 0 0 0 #ffffff80;
+    color: #f1e8e8;
+    height: 3rem;
+    font-family: 'Quicksand', sans-serif;
+    margin: 1%;
+    text-shadow: 0 2px 3px #100606;
+    width: 21%;
+}
+
+.button:hover {
+    border-color: #0000003a;
+    background-color: #fab9c8;
+}
+
+.button:active {
+    background-color: #FFDEE6;
+}
+
+.button:focus {
+    outline: 0;
+}
+
