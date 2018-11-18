@@ -576,3 +576,41 @@ h2, h3 {
     outline: 0;
 }
 
+
+/* Projects */
+
+#courses {
+    text-align: center;
+    padding:2rem; 
+}
+
+.course-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:1rem;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 29%;
+    margin:1rem;
+}
+
+.subject img {
+    height:auto;
+    width:100%;
+}
+
+.subject-text {
+    background-color: white;
+    color:#9C9C9C;
+    font-weight: 300;
+    padding:1rem;
+    text-align: left;
+}
+
+.subject h4 {
+    margin-bottom: 0.75rem;
+}
