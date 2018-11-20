@@ -12,7 +12,6 @@
       <!-- Custom fonts -->
       <link href="https://fonts.googleapis.com/css?family=Comfortaa:300Mina" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       
       <title>Adam Pauw</title>
 
@@ -26,7 +25,6 @@
   <body data-spy='scroll' data-target='.navbar'>
 
 <!-- navbar  -->
-
 
           <nav class='navbar navbar-default navbar-fixed-top'>
               <div class='container-fluid'>
@@ -44,16 +42,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
                   <ul class='nav navbar-nav navbar-right'>
-                    <li><a href='#home'>Homepage</a></li>
-                    <li class='dropdown'>
-                      <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>Work <span class='caret'></span></a>
-                      <ul class='dropdown-menu'>
-                        <li><a href='#projwork'>Work</a></li>
-                        <li><a href='#calc'>Calculator</a></li>
-                      </ul>
-                    </li>
-                    <li><a href='#about-me'>About me</a></li>
-                    <li><a href='#faq'>Faq</a></li>
+                    <li><a href='#about'>About me</a></li>
+                    <li><a href='#courses'>Projects</a></li>
                     <li><a href='#contact'>Contact</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -61,6 +51,7 @@
           </nav>
 
 <!-- Title  -->
+
       <div class='container-fluid' id='home'>
         <div class= 'header'>
           <div class='title-image'>
@@ -71,6 +62,7 @@
         </div>
 
 <!-- Resume button -->
+
         <div class='cv' id='modal-div'>
           <div class='modal-button'>
             <button class='btn btn-primary' type='button' data-toggle='modal' data-target='.bs-example-modal-lg'>Resume/CV</button>
@@ -92,6 +84,23 @@
         </div>
       </div>
 
+      <!-- About me -->
+
+      <div class='row content'>
+          <div id='about'>
+            <h2>Who I am</h2>
+            <p> I have been studying Web Design for over a year now mostly while working full time, so of course I am happy to finally switch careers and put this knowledge to good use
+              <br>
+              <br>
+              Most of my studies have been Front-end focused and I am choosing to continue down this path as my primary devotion. That being said I have also studied and created projects using Ruby and both MySQL and PostgreSQL databases which I found also very interesting
+            </p>
+            <p>Originally from Canada I left behind a Career in search of something I could consider more fulfilling. I crave the challenge and enjoy continous growth, both of which the Tech world has no shortage of
+              <br>
+              <br>
+            When I am not staring into my laptops soul writing code I can be found at the local climbing gym or halfway up a cliff wondering if I should collect stamps instead </p>
+          </div><!-- /col -->
+      </div><!-- /row -->
+
       <section  id='courses'>
           <h2>Projects</h2>
           <div class='course-options'>
@@ -99,46 +108,62 @@
                   <img src='./img/brokeBike.png'
                   alt='two computer screens'>
                   <div class='subject-text'>
-                      <h4>Software engineering</h4>
-                      <span>Courses</span>
-                      <p>Web Development, Mobile Development, iOT, APIs</p>
+                      <h4>Broke-bike Mountain</h4>
+                      <span>Ruby on Rails web-app</span>
+                      <p>CSS, HTML, Javascript, Ruby, Ruby on rails, Stripe, Actioncable, Rspec,AJAX, Caching, Debugging, Security, Mailers, Authentication, Authorization</p>
                   </div>
               </div>
               <div class='subject'>
                   <img src='./img/myTimes.png'
                   alt='cell phone'>
                   <div class='subject-text'>
-                      <h4>Computer art</h4>
-                      <span>COURSES</span>
-                      <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects.
-                      </p>
+                      <h4>My Times</h4>
+                      <span>Static site</span>
+                      <p> CSS, HTML, Bootstrap</p>
                   </div>
               </div>
               <div class='subject'>
                   <img src='./img/capStone.png'
                   alt='guy with old camera'>
                   <div class='subject-text'>
-                      <h4>Design</h4>
-                      <span>COURSES</span>
-                      <p>User Experience Design, User Research, Visual Design</p>
+                      <h4>Capstone Project</h4>
+                      <span>Static site</span>
+                      <p>CSS, HTML, Bootstrap, embedded videos</p>
                   </div>
               </div>
               <div class='subject'>
                   <img src='./img/TeaCozy.png'
                   alt='laptop with statistics'>
                   <div class='subject-text'>
-                      <h4>Data</h4>
-                      <span>COURSES</span>
-                      <p>Data Science, Big Data, SQL, Data Visualization</p>
+                      <h4>Tea Cozy</h4>
+                      <span>Static site</span>
+                      <p>CSS, HTML, Bootstrap</p>
                   </div>
               </div>
-              <div class='subject'>
-                  <img src='./img/course-business.jpg'
-                  alt='chess set'>
+              <div class='subject' id='calc-background'>
+                        <div class='calculator'>
+                          <div id='display'>0</div>
+                          <button class='button' type='button' onclick='calcBtn(this);'>7</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>8</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>9</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>AC</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>4</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>5</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>6</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>+</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>1</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>2</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>3</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>-</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>0</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>*</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>/</button>
+                          <button class='button' type='button' onclick='calcBtn(this);'>=</button>
+                        </div>
                   <div class='subject-text'>
-                      <h4>Business</h4>
-                      <span>COURSES</span>
-                      <p>Product Development, Business Development, Startup</p>
+                      <h4>Calculator</h4>
+                      <span>Javascript Calculator</span>
+                      <p>CSS, HTML, Javascript</p>
                   </div>
               </div>
               <div class='subject'>
@@ -153,216 +178,33 @@
           </div>
       </section>
 
-      
-      <!-- Example row of columns -->
-      <div class='row'>
-        <div class='col-md-4'>
-          <h2>Portfolio Concept</h2>
-          <p>Portfolio Concept:
-              Past projects
-          </p>
+      <!-- Contact -->
+
+      <div class='row content'>
+          <div id='contact'>
+            <h2>Contact</h2>
             <ul>
-              <li><a href= 'http://infallible-carson-8caf32.bitballoon.com/'>Project 1</a></li>
-              <li><a href= 'http://quirky-bardeen-72fc4b.bitballoon.com/'>Project 2</a></li>
-            </ul>
-          <p>
-             I wish to showcase clean elegant designs with an emphasis on simplicty and subject depth.
-          </p>
-          <button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='top' title='up high'>View details &raquo;</button>
-        </div><!-- /col -->
-        <div class='col-md-4'>
-          <h2>Project Goals</h2>
-          <p>Project Goals: Would like to finish the course before end of August. Currently enrolled in Deutsch schule four times a week, aiming to apply <a href='#' title='thats 90.000 seconds' id='tooltip25'>25hrs</a> a week to webdev.</p>
-          <button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='bottom' title='down low'>View details &raquo;</button>
-       </div><!-- /col -->
-        <div class='col-md-4'>
-          <h2>Course Goals</h2>
-          <p>Course Goals: This will be my third webdev course, since they have been spaced out I am aiming to refresh some knowledge, furthur my knowledge of Javascript and learn new material such as Ruby on Rails. Afterwards I hope to have to confidence to change careers into a Junior WebDevloper. 
-          </p>
-          <button type='button' class='btn btn-default' data-toggle='tooltip' data-placement='right' title='too slow'>View details &raquo;</button>
-        </div><!-- /col -->
-      </div><!-- /row -->
-      <hr>
-    </div> <!-- /container -->
-
-<!-- Work -->
-
-    <h2 id='projwork'>Work</h2>
-
-    <div class='container'>
-      <div class='row' id='work1'>
-      </div><!-- /row -->
-    </div>
-
-<!-- Calculator -->
-
-    <div>
-      <h2 id='calc'>Calculator</h2>
-        <div class='calculator'>
-          <div id='display'>0</div>
-          <button class='button' type='button' onclick='calcBtn(this);'>7</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>8</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>9</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>AC</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>4</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>5</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>6</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>+</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>1</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>2</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>3</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>-</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>0</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>*</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>/</button>
-          <button class='button' type='button' onclick='calcBtn(this);'>=</button>
-        </div>
-    </div>
-
-        <!-- Drop down menu -->
-
-        <div class='panel-group' id='accordion'>
-            <div class='panel panel-default'>
-              <div class='panel-heading' data-toggle='collapse' data-parent='#accordion' href='#collapseOne'>
-                <h4 class='panel-title'>
-                  <a>
-                    <span class='glyphicon glyphicon-plus'></span> What is my favourite aspect of web–design?
-                  </a>
-                </h4>
-              </div>
-              <div id='collapseOne' class='panel-collapse collapse in'>
-                <div class='panel-body'>
-                  To me the best part of web-design or any coding really is the fact that it is ever changing and always evolving so each day it can always be something new to discover and solve.
-                </div>
-              </div>
-            </div>
-            <div class='panel panel-default'>
-              <div class='panel-heading' data-toggle='collapse' data-parent='#accordion' href='#collapseTwo'>
-                <h4 class='panel-title'>
-                  <a>
-                    <span class='glyphicon glyphicon-plus'></span> Who are my clients?
-                  </a>
-                </h4>
-              </div>
-              <div id='collapseTwo' class='panel-collapse collapse'>
-                <div class='panel-body'>
-                  <span>So far my (pro-bono) clients have included:</span>
-                  <ul>
-                      <li>Superficially interested family members</li>
-                      <li>Automated programs with yes/no algorithms</li>
-                      <li>Highly talented Tutors</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class='panel panel-default' data-toggle='collapse' data-parent='#accordion' href='#collapseThree'>
-              <div class='panel-heading'>
-                <h4 class='panel-title'>
-                  <a>
-                    <span class='glyphicon glyphicon-plus'></span> Why cant you just remove the spaces from your CSS?
-                  </a>
-                </h4>
-              </div>
-              <div id='collapseThree' class='panel-collapse collapse'>
-                <div class='panel-body'>
-                  It is an extremely tasking process which involves high level Calculus, advanced Geography as well as a revised version of "The Theory of Relativity" which I myself have not entirely grasped. 
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Page -->
-
-    <div class='container-fluid' id='contact'>
-        <div class='background'>
-            <div class='contact'>
-                <div class='contact-content'>
-                    <div class='info'>
-                      <ul>
-                        <li>
-                          <p id='contact-name'>
-                            <span class='glyphicon glyphicon-user'></span> Adam Pauw
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            <span class='glyphicon glyphicon-earphone'></span> 01124257111
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            <span class='glyphicon glyphicon-envelope'></span> adampauw@gmail.com
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class='form'>
-                      <form id='paperwork'>
-                        <div class='form-group'>
-                          <div class='form-group col-xs-12 col-sm-6'>
-                            <label for='name' class='sr-only'>Name</label>
-                            <input type='text' placeholder='Your Name' name='name' class='form-control' id='name' >
-                          </div>
-                        </div>
-                        <div class='form-group'>
-                          <div class='form-group col-xs-12 col-sm-3'>
-                            <label for='tel' class='sr-only'>E-mail</label>
-                            <input type='tel' placeholder='Whats yo number?' name='phone' class='form-control' id='tel'>
-                          </div>
-                        </div>
-                        <div class='form-group'>
-                          <div class='form-group col-xs-12 col-sm-3'>
-                            <label for='email' class='sr-only'>E-mail</label>
-                            <input type='email' placeholder='Enter E-mail here' name='email' class='form-control' id='email'>
-                          </div>
-                        </div>
-                        <div class='form-group'>
-                          <div class='form-group col-xs-12'>
-                            <label for='message-box' class='sr-only'>Leave a message</label>
-                            <textarea style='resize:none' rows='5' placeholder='Leave a message' name='message' class='form-control' id=message-box></textarea>
-                            <p id='visible-comment'></p>
-                            <p id='char-Count'></p>
-                          </div>
-                        </div>
-                        <div class='form-group'>
-                          <div class='form-group col-xs-12'><!-- submit button -->
-                            <label for='contact-btn-submit' class='sr-only'>Submit</label>
-                            <button type='submit' class='btn btn-default' id='contact-btn-submit'>Submit</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                </div>
-            </div>
-            <div class='map-container'>
-              <!-- <iframe  frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=50.9375%2C6.9603&key=AIzaSyDGIOc8wVJrhJHZHx9RZ6O3BVNvE0ZjA3U" allowfullscreen></iframe> -->
-              <div id="map"></div>
-            </div>
-        </div>
-    </div>
-
+                <li><a>Adam Pauw</a></li>
+                <li><a>+(49) 152 2425 7111</a></li>
+                <li><a>adampauw@gmail.com</a></li>
+                <li><a href="https://github.com/adampauw">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/adampauw/">Linkedin</a></li>
+                <li><a>Köln, Deutschland</a></li>
+              </ul>
+          </div><!-- /col -->
+      </div>
+    
+<!-- Footer -->
     
     <footer>
-      <div class='footer-media'>
-        <a class='twitter-follow-button'
-        href='https://twitter.com/TwitterDev' data-show-screen-name='false' data-show-count='false'>Follow @TwitterDev</a>
-        <div class='fb-share-button' data-href='https://www.facebook.com/adam.pauw' data-layout='button' data-size='small'              data-mobile-iframe='true'> 
-          <a target='_blank' href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fadam.pauw&amp;src=sdkpreparse' class='fb-xfbml-parse-ignore'>Share</a>
-        </div>
-      </div>
       <div class='footer-copyright'>&copy; Adam Pauw 2018</div>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <!-- Bootstrap core JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js" ></script>
     <script src="js/work.js" ></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJcOHmHL1ty0MipXBHctV8Pq3bnWkmUTk&callback=initMap"
-    async defer></script>
   </body>
 </html>
-
-
