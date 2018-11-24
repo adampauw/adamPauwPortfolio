@@ -6,6 +6,7 @@
 
 body {
     background-color: #afafaf2b;
+    
 }
 
 a {
@@ -544,12 +545,24 @@ p, li, span {
     display: block;
     padding: 1%;
     max-width: 300px;
-    margin: 2rem auto 0rem;    
+    margin: 4rem auto 0rem;    
 }
 
 @media only screen and (max-width:320px) { 
 	.calculator {
         margin: 0rem;
+    }
+}
+
+@media only screen and (min-width:1440px) { 
+	.calculator {
+        margin: 6rem auto 7rem;
+    }
+}
+
+@media only screen and (min-width:2560px) { 
+	.calculator {
+        margin: 20rem auto 19rem;
     }
 }
 
