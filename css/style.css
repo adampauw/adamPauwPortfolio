@@ -1,89 +1,60 @@
 
-/* Universal */
+/* ----------------------------------------------Universal---------------------------------------------- */
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #afafaf2b;
-    
+    background-color: #F5F5F5;
+    color: #34495e;
+    position: relative;
 }
 
 a {
     color: #024b69ad;
 }
 
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    color: #000000ad;
+    font-family: 'Comfortaa', cursive;
+}
+
+p, li, span {
+    font-family: 'Mina', sans-serif;
+    font-weight: 100;
+}
+
 ul {
     list-style-type: none;
-  }
-
-/* Layout */
-
-
-.jumbotron p {
-    color: #ffffff;
-    font-size: 18px;
 }
 
-.jumbotron h1 {
-    color: #09b2d8c9;
-    font-size: 50px;
+li {
+    font: 200 1.5rem/1.5 Helvetica, Verdana, sans-serif;
 }
-
-.title-image {
-    position: relative;
+   
+li a {
+    text-decoration: none;
+    color: #000;
     display: block;
-    max-width: 200px;
-    max-height: 200px;
     width: auto;
-    height: auto;
-    margin: 10% auto;
+   
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
 }
-
-@media only screen and (max-width:425px) { 
-    .title-image {
-        margin: 22% auto;
-    }
-}
-
-@media only screen and (min-width:1440px) { 
-	.title-image {
-        margin: 3% auto;
-    }
-
-    .header h1 {
-        margin: -2% auto !important;
-    }
-
-    .header h4 {
-        margin: 3% auto !important;
-    }
-
-    .cv {
-        margin: -3% auto !important;
-    }
-}
-
-.btn {
-    transition: 0.5s;
-    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
-}
-
-.btn:hover {
-    background-position: right center; /* change the direction of the change here */
-  }
-
-
-
-.title-image img {
-    max-width: -webkit-fill-available;
-}
-
-.title-image h4 {
-    position: absolute;
-    top: 50%;
-    right:50%;
-    margin-left: 50%;
+   
+li a:hover {
+    font-size: 1.8rem;
+    background: #f6f6f6;
+    color: black;
+    text-decoration: none;
 }
 
 .container {
@@ -96,31 +67,7 @@ ul {
     padding-right: 1em; 
 }
 
-.navbar-default {
-    background-color: #00000000;
-    border: none;
-    padding: 0 1em;
-    position: absolute;
-}
-
-.navbar-header {
-    margin-left: 5%;
-}
-
-.navbar-default .navbar-nav>.active> a, 
-.navbar-default .navbar-nav>.active> a:focus, 
-.navbar-default .navbar-nav>.active> a:hover {
-  background: none; 
-}
-
-#home {
-    background-image: url("../img/autumn.JPG");
-    background-size: cover;
-    background-position: center;
-    height: 460px;
-    width: 100%;
-    margin: 0% auto;
-}
+/* ----------------------------------------------Header---------------------------------------------- */
 
 .header {
     display: block;
@@ -138,239 +85,33 @@ ul {
     margin: 10% auto;
 }
 
-.intro {
-    border-radius: 10px;
-    float: right;
-    padding: 0 20px;
-    position: relative; 
-    top: 145px;
-    margin-top: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1em;
-}
+/* ----------------------------------------------Navbar---------------------------------------------- */
 
-#skill-list {
-    margin-left: 50px;
-}
-
-#accordion {
-    padding: 0 1rem;
-}
-
-.cv {
-    max-width: 142px;
-    margin: -10% auto;
-    padding-bottom: 5em;
-}
-
-#projwork, #calc {
-    background-color: #ffffff;
-    display: grid;
-    padding: 1em;
-}
-
-#work img {
-    display: table-cell;
-    margin: 1em;
-    padding-bottom: 5em;
-    vertical-align: middle;
-    width: auto;
-}
-
-#worktitle {
-    font-size: 3em;
-    text-decoration: underline;
-}
-
-#work1 {
-    padding: 2rem 0;
-}
-
-#vid-title {
-    background-color: #ffffff;
-    padding: 1em;
-}
-
-#vid-container {
-    max-width: 33%;
-    min-width: 360px;
-    padding: 3rem 0 3rem 1.5rem;
-}
-
-.footer-media {
-    padding-left: 1rem;
-}
-
-.footer-copyright {
-    padding: 1rem;
-}
-
-/* Color */
-
-body {
-    background-color: #F5F5F5;
-    color: #34495e;
+.title-image {
     position: relative;
-}
-
-.skills {
-    background-color: #719ebd2b;
-    color: #000000ad;
-    padding-bottom: 1.2em;
-}
-
-.intro {
-    background-color: #719fbdbd;
-    color: #000000ad;
-}
-
-@media (max-width: 425px) {
-    .intro {
-     background-color: #719fbdbd;
-     width: 95%;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-        color: #060606c2;
-    }
-}
-
-.main-text {
-    background-color: #c1aeae2b;
-    color: #000000ad;
-}
-
-.contact {
-    background-image: url("../img/IMG_1600-min.JPG");
-    background-size: cover;
-    background-position: inherit;
-    height: 75%;
-}
-
-.contact-content {
-    height: 100%;
-    text-align: center;
-}
-
-.form {
-    margin: 4rem 0 4rem 0;
-}
-
-.info {
-    align-content: center;
-    color: #ebf0f5;
-    display: grid;
-    height: auto;
-    padding-top: 10%;
-}
-
-.info ul {
-    display: inline-grid;
-}
-
-.contact-footer {
-    height: 10%;
-}
-
-.map-container {
-    align-items: center;
-    background-size: cover;
-    display: flex;
-    height: 25%;
-    justify-content: center;
-}
-
-#map {
-    height: 100%;
-    width: 100%;
-}
-
-.address {
-    background-color: #314059c2;
-    border-radius: 15%;
-    display: inline-grid;
-    height: 36%;
-    justify-content: center;
-    padding: 1em;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
     width: auto;
+    height: auto;
+    margin: 10% auto;
 }
 
-.address span {
-    color: whitesmoke;
+.navbar-default {
+    background-color: #00000000;
+    border: none;
+    padding: 0 1em;
+    position: absolute;
 }
 
-.info span {
-    color: #ceda7ccf;
-    font-size: 1em;
-    padding: 1em;
-    text-transform: uppercase; 
+.navbar-header {
+    margin-left: 5%;
 }
 
-.contact-footer {
-    font-size: 1.3em;
-    text-align: center;
-}
-
-.page-links {
-    font-size: 1.4em;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 500;
-    padding: 3em;
-    text-align: center;
-}
-
-.page-links a {
-    font-family: 'Comfortaa', cursive;
-    padding-right: 0.75rem;
-    text-decoration: none;
-}
-
-.page-links a:hover {
-    color: #027eafad;
-    text-decoration: underline;
-    -webkit-transition: color 600ms;
-}
-
-#homelinks {
-    display: grid;
-    font-size: 1.4em;
-    font-family: 'Mina', sans-serif;
-    font-weight: 500;
-    padding: 3em;
-}
-
-#homelinks a {
-    color: #09b2d8c9;
-}
-
-.glyphicon-user:hover {
-    color: #027eafad;
-    -webkit-transition: color 700ms;
-}
-
-.glyphicon-earphone:hover {
-    color: #027eafad;
-    -webkit-transition: color 700ms;
-}
-
-.glyphicon-envelope:hover {
-    color: #027eafad;
-    -webkit-transition: color 700ms;
-}
-
-.panel-body {
-    background-color: #d3d9e2d9;
-}
-
-.panel-default .panel-heading {
-    background-color: #9da5afa8;
-}
-
-#contact-name {
-    color: #0f3052fa;
-    font-size: 2rem;
+.navbar-default .navbar-nav>.active> a, 
+.navbar-default .navbar-nav>.active> a:focus, 
+.navbar-default .navbar-nav>.active> a:hover {
+    background: none; 
 }
 
 .navbar-default .navbar-brand {
@@ -381,37 +122,51 @@ body {
     color: #060606c2;    
 }
 
+.navbar-brand {
+    font-family: 'Comfortaa', cursive;
+}
+
 .icon-bar {
     background-color: #0a0a0aa1 !important;
 }
 
-.footer-copyright {
-    float: right;
+/* ----------------------------------------------Title---------------------------------------------- */
+
+.title-image img {
+    max-width: -webkit-fill-available;
 }
 
-.footer-media {
-    display: inline;
+.title-image h4 {
+    position: absolute;
+    top: 50%;
+    right:50%;
+    margin-left: 50%;
 }
 
-.form-control {
-    background-color: none;
-    border: none;
+#home {
+    background-image: url("../img/autumn.JPG");
+    background-size: cover;
+    background-position: center;
+    height: 460px;
     width: 100%;
+    margin: 0% auto;
 }
 
-#message-box {
-    width: 100%;
+/* ----------------------------------------------Resume---------------------------------------------- */
+
+.btn {
+    transition: 0.5s;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
 }
 
-.btn-default {
-    font-family: 'Comfortaa', cursive;
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
 }
 
-.learn-more {
-    color: #ffffff;
-    float: left;
-    text-align: left;
-    padding-left: 1rem;
+.cv {
+    max-width: 142px;
+    margin: -10% auto;
+    padding-bottom: 5em;
 }
 
 .modal-button {
@@ -424,119 +179,62 @@ body {
     width: 100%;
 }
 
-.tooltip-inner {
-    color: #fff !important;
-    background: #c23d39 !important;
-  }
+/* ----------------------------------------------About---------------------------------------------- */
 
-.work-img {
-    display: block; /* needed to center the element with margin */
-    margin: auto; /* center the image inside the column if it's smaller */
-    max-width: 200px; /* needs to be set to the width of your image files if they are relatively small */
-    position: relative; /* is needed for .info position: absolute to work */
+#about {
+    border-bottom: 1px #8080804d solid;
+    margin-top: 4rem;
+    padding-bottom: 2rem;
 }
 
-.work-info {
-    position: absolute; /* let's us move the text around and not worry about the image */
-    top: 15%; /* position the text 15% away from the top */
-    left: 22%;
-    color: #3d94a5;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-family: Futura;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.5em;
-    line-height: 1.6;
-    display: none;
+#about h2 {
+    padding-bottom: 2rem;
 }
 
-.proj-title {
-    font-weight: 100;
+/* ----------------------------------------------Projects---------------------------------------------- */
+
+.course-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
-#visible-comment {
-    background-color: #ceda7ccf;
-    width: fit-content;
-    margin: auto;
-    border-radius: 0.5em;
-    margin-bottom: 1em;
+.subject {
+    display: grid;
+    flex-direction: column;
+    flex-basis: 75%;
+    margin: 1rem;
+    border: #8c8c8c 1px solid;
 }
 
-#char-Count {
-    background-color: #ceda7ccf;
-    width: 15%;
-    margin: auto;
-    border-radius: 0.5em;
-}
-
-/* Typography */
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-
-h1, h2, h3 {
-    color: #000000ad;
-    font-family: 'Comfortaa', cursive;
-}
-
-p, li, span {
-    font-family: 'Mina', sans-serif;
-    font-weight: 100;
-}
-
-#work h2 {
-    padding-left: 1em;
-}
-
-.intro p {
-    font-family: 'Mina', sans-serif;
-    font-weight: 100;
-}
-
-.skills h3 {
-    text-align: center;
-}
-
-.panel-heading {
-    text-transform: uppercase;
-}
-
-/* Photos */
-
-.about {
-    background-image: url("../img/IMG_1539-min.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: -webkit-fill-available;
-    overflow: auto;
-}
-
-.jumbotron {
-    background-image: url("../img/IMG_1642-min.JPG");
-    background-size: cover;
-    background-position: center;
-}
-
-#faq {
-    background-image: url("../img/IMG_1553-min.JPG");
-    background-size: cover;
-    background-position: center;
-    height: -webkit-fill-available;
+.subject img {
+    height: auto;
     width: 100%;
 }
 
-.background {
-    height: 924px;
-} 
-
-.navbar-brand {
-    font-family: 'Comfortaa', cursive;
+.subject-text {
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    padding: 1rem;
+    text-align: left;
 }
 
-/* Calculator  */
+.subject h4 {
+    margin-bottom: 0.75rem;
+}
+
+#courses {
+    text-align: center;
+    padding: 2rem; 
+}
+
+#courses h2 {
+    padding-bottom: 2rem;
+}
+
+/* ----------------------------------------------Calculator---------------------------------------------- */
 
 .calculator {
     background-color: #A4DAD7;
@@ -546,28 +244,6 @@ p, li, span {
     padding: 1%;
     max-width: 300px;
     margin: 4rem auto 0rem;    
-}
-
-@media only screen and (max-width:320px) { 
-	.calculator {
-        margin: 0rem;
-    }
-}
-
-@media only screen and (min-width:1440px) { 
-	.calculator {
-        margin: 6rem auto 7rem;
-    }
-}
-
-@media only screen and (min-width:2560px) { 
-	.calculator {
-        margin: 20rem auto 19rem;
-    }
-}
-
-#calc-background {
-    background-color: white;
 }
 
 #display {
@@ -581,6 +257,10 @@ p, li, span {
     text-align: right;
     padding-right: 0.5em;
     font-family: 'Quicksand', sans-serif;
+}
+
+#calc-background {
+    background-color: white;
 }
 
 .button {
@@ -609,78 +289,13 @@ p, li, span {
     outline: 0;
 }
 
+/* ----------------------------------------------Contact---------------------------------------------- */
 
-/* Projects */
-
-#courses {
-    text-align: center;
-    padding: 2rem; 
-}
-
-#courses h2 {
-    padding-bottom: 2rem;
-}
-
-.course-options {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-}
-
-.subject {
-    display: grid;
-    flex-direction: column;
-    flex-basis: 75%;
-    margin: 1rem;
-    border: #8c8c8c 1px solid;
-}
-
-@media only screen and (max-width:425px) { 
-	.subject {
-        flex-basis: 100%;
-    }
-}
-
-@media only screen and (min-width:1024px) { 
-	.subject {
-        flex-basis: 45%
-    }
-}
-
-.subject img {
-    height: auto;
-    width: 100%;
-}
-
-.subject-text {
-    background-color: white;
-    color: black;
-    font-weight: 300;
-    padding: 1rem;
-    text-align: left;
-}
-
-.subject h4 {
-    margin-bottom: 0.75rem;
-}
-
-/* About me */
-
+/* .content is also in about */
 .content {
     width: auto;
     padding: 0% 20%;
     text-align: center;
-}
-
-#about {
-    border-bottom: 1px #8080804d solid;
-    margin-top: 4rem;
-    padding-bottom: 2rem;
-}
-
-#about h2 {
-    padding-bottom: 2rem;
 }
 
 #contact {
@@ -694,27 +309,77 @@ p, li, span {
     margin: 0;
     padding: 2rem;
 }
-   
-li {
-    font: 200 1.5rem/1.5 Helvetica, Verdana, sans-serif;
+
+/* ----------------------------------------------Footer---------------------------------------------- */
+
+.footer-copyright {
+    padding: 1rem;
+    float: right;
 }
-   
-li a {
-    text-decoration: none;
-    color: #000;
-    display: block;
-    width: auto;
-   
-    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
-    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
-    transition: font-size 0.3s ease, background-color 0.3s ease;
+
+.footer-media {
+    display: inline;
 }
-   
-li a:hover {
-    font-size: 1.8rem;
-    background: #f6f6f6;
-    color: black;
-    text-decoration: none;
+
+/* ----------------------------------------------Media---------------------------------------------- */
+
+
+@media only screen and (max-width:425px) { 
+    .title-image {
+        margin: 22% auto;
+    }
+}
+
+@media only screen and (min-width:1440px) { 
+	.title-image {
+        margin: 3% auto;
+    }
+
+    .header h1 {
+        margin: -2% auto !important;
+    }
+
+    .header h4 {
+        margin: 3% auto !important;
+    }
+
+    .cv {
+        margin: -3% auto !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #060606c2;
+    }
+}
+
+@media only screen and (max-width:320px) { 
+	.calculator {
+        margin: 0rem;
+    }
+}
+
+@media only screen and (min-width:1440px) { 
+	.calculator {
+        margin: 6rem auto 7rem;
+    }
+}
+
+@media only screen and (min-width:2560px) { 
+	.calculator {
+        margin: 20rem auto 19rem;
+    }
+}
+
+@media only screen and (max-width:425px) { 
+	.subject {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (min-width:1024px) { 
+	.subject {
+        flex-basis: 45%
+    }
 }
