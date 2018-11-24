@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #afafaf2b;
 }
 
 a {
@@ -620,6 +620,7 @@ p, li, span {
     flex-direction: column;
     flex-basis: 75%;
     margin: 1rem;
+    border: #8c8c8c 1px solid;
 }
 
 @media only screen and (max-width:425px) { 
@@ -641,7 +642,7 @@ p, li, span {
 
 .subject-text {
     background-color: white;
-    color: #9C9C9C;
+    color: black;
     font-weight: 300;
     padding: 1rem;
     text-align: left;
@@ -675,17 +676,17 @@ p, li, span {
     padding-bottom: 2rem;
 }
 
-ul {
+#contact ul {
     list-style-type: none;
     margin: 0;
     padding: 2rem;
-  }
+}
    
-  li {
+li {
     font: 200 1.5rem/1.5 Helvetica, Verdana, sans-serif;
-  }
+}
    
-  li a {
+li a {
     text-decoration: none;
     color: #000;
     display: block;
@@ -696,11 +697,11 @@ ul {
     -o-transition: font-size 0.3s ease, background-color 0.3s ease;
     -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
     transition: font-size 0.3s ease, background-color 0.3s ease;
-  }
+}
    
-  li a:hover {
+li a:hover {
     font-size: 1.8rem;
     background: #f6f6f6;
     color: black;
     text-decoration: none;
-  }
+}
