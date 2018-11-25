@@ -139,7 +139,7 @@ li a:hover {
 .title-image h4 {
     position: absolute;
     top: 50%;
-    right:50%;
+    right: 50%;
     margin-left: 50%;
 }
 
@@ -323,14 +323,29 @@ li a:hover {
 
 /* ----------------------------------------------Media---------------------------------------------- */
 
-
-@media only screen and (max-width:425px) { 
-    .title-image {
-        margin: 22% auto;
+@media only screen and (max-width: 320px) { 
+	.calculator {
+        margin: 0rem;
     }
 }
 
-@media only screen and (min-width:1440px) { 
+@media only screen and (max-width: 425px) { 
+    .title-image {
+        margin: 22% auto;
+    }
+
+    .subject {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #060606c2;
+    }
+}
+
+@media only screen and (min-width: 1440px) { 
 	.title-image {
         margin: 3% auto;
     }
@@ -346,40 +361,20 @@ li a:hover {
     .cv {
         margin: -3% auto !important;
     }
-}
 
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-        color: #060606c2;
-    }
-}
-
-@media only screen and (max-width:320px) { 
-	.calculator {
-        margin: 0rem;
-    }
-}
-
-@media only screen and (min-width:1440px) { 
-	.calculator {
+    .calculator {
         margin: 6rem auto 7rem;
     }
 }
 
-@media only screen and (min-width:2560px) { 
-	.calculator {
-        margin: 20rem auto 19rem;
-    }
-}
-
-@media only screen and (max-width:425px) { 
-	.subject {
-        flex-basis: 100%;
-    }
-}
-
-@media only screen and (min-width:1024px) { 
+@media only screen and (min-width: 1024px) { 
 	.subject {
         flex-basis: 45%
+    }
+}
+
+@media only screen and (min-width: 2560px) { 
+	.calculator {
+        margin: 20rem auto 19rem;
     }
 }
