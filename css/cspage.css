@@ -1,4 +1,6 @@
 
+    /* ----------------------------------------------Universal---------------------------------------------- */
+
 body {
     background-color: #F5F5F5;
 }
@@ -7,85 +9,43 @@ h1, h2 {
     font-family: 'Comfortaa', cursive;
 }
 
-#back-bar {
-    background-color: #f8f8f803;
-    border: none;
-}
+/* ----------------------------------------------Header---------------------------------------------- */
 
-#back-bar .navbar-brand {
+.project-header{
     color: white;
+    padding: 100px 0;
+    width: 80%;
+    margin: auto;
+    text-align:center;
 }
 
-#projects-wrapper h1 {
-    color: black;
-    text-align: center;
-  }
-  
-  #projects-wrapper {
-    margin-top: 50px;
-    width: 50%;
-  }
-  #case-study-wrapper h3{
-    color: black;
-    font-weight: 300;
-    font-size: 24px;
-    letter-spacing: 3px;
-  }
-  
-  .content-block {
-    padding: 17px 17px;
-  }
-  
-  #hero-header {
+#hero-header {
     background-image: url("../img/autumn.JPG");
     background-size: cover;
     background-position: center;
     height: 460px;
     width: 100%;
     margin: 0% auto;
-  }
-  
-  .project-header{
-    color: white;
-    padding: 100px 0;
-    width: 80%;
-    margin: auto;
-    text-align:center;
-  }
-  .content-img img {
+}
+
+#back-bar {
+    background-color: #f8f8f803;
+    border: none;
+}
+
+    /* ----------------------------------------------Content---------------------------------------------- */
+
+.content-img img {
     display: block;
     max-width: 500px;
     max-height: 500px;
     width:  -webkit-fill-available;
     height: auto;
     margin: 2% auto;
-    /* border: 1.6px solid #134962; */
-  }
-
-  @media only screen and (min-width:1024px) { 
-    #single-header {
-        text-align: center;
-        max-width: 55%;        
-        margin: auto;
-      }
-
-    #single-text {
-    text-align: center;
-    margin: auto;
-    max-width: 50%;
-    margin-bottom: 3rem;
-    }
 }
 
-
-
-  .footer-copyright {
-    padding: 1rem;
-    float: right;
-}
-
-.footer-media {
-    display: inline;
+.content-block {
+    padding: 17px 17px;
 }
 
 .btn {
@@ -95,4 +55,49 @@ h1, h2 {
     border-radius: 3rem;
     font-family: 'Mina', sans-serif;
 }
+
+#projects-wrapper h1 {
+    color: black;
+    text-align: center;
+}
   
+#projects-wrapper {
+    margin-top: 50px;
+    width: 50%;
+}
+
+#case-study-wrapper h3{
+    color: black;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+
+    /* ----------------------------------------------Footer---------------------------------------------- */
+
+.footer-copyright {
+    padding: 1rem;
+    float: right;
+}
+
+.footer-media {
+    display: inline;
+}
+
+    /* ----------------------------------------------Media---------------------------------------------- */
+    
+@media only screen and (min-width:1024px) { 
+    #single-header {
+        text-align: center;
+        max-width: 55%;        
+        margin: 10px auto;
+    }
+
+    #single-text {
+        text-align: center;
+        margin: auto;
+        max-width: 50%;
+        margin-bottom: 3rem;
+    }
+}
