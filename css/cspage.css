@@ -3,6 +3,10 @@ body {
     background-color: #F5F5F5;
 }
 
+h1, h2 {
+    font-family: 'Comfortaa', cursive;
+}
+
 #back-bar {
     background-color: #f8f8f803;
     border: none;
