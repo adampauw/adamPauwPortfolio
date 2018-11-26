@@ -1,0 +1,81 @@
+
+body {
+    background-color: #F5F5F5;
+}
+
+#back-bar {
+    background-color: #f8f8f803;
+    border: none;
+}
+
+#back-bar .navbar-brand {
+    color: white;
+}
+
+#projects-wrapper h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  #projects-wrapper {
+    margin-top: 50px;
+    width: 50%;
+  }
+  #case-study-wrapper h3{
+    color: black;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  
+  #case-study-wrapper {
+    padding: 100px 32px;
+    width: 80%;
+  }
+  
+  .content-block {
+    padding: 17px 17px;
+  }
+  
+  #hero-header {
+    background-image: url("../img/autumn.JPG");
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    width: 100%;
+    margin: 0% auto;
+  }
+  
+  .project-header{
+    color: white;
+    padding: 100px 0;
+    width: 80%;
+    margin: auto;
+    text-align:center;
+  }
+  .content-img img {
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    margin: 2% auto;
+    /* border: 1.6px solid #134962; */
+  }
+
+  #single-text {
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .footer-copyright {
+    padding: 1rem;
+    float: right;
+}
+
+.footer-media {
+    display: inline;
+}
+  
