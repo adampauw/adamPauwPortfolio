@@ -133,7 +133,7 @@ li a:hover {
 }
 
 .title-image img {
-    max-width: -webkit-fill-available;
+    max-width: 100%;
 }
 
 .title-image h4 {
